@@ -189,6 +189,17 @@ public class MainActivity extends Activity implements OnClickListener {
 		    }
 		});
 		
+		
+		builder.setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int id) {
+                // User clicked OK, so save the mSelectedItems results somewhere
+                // or return them to the component that opened the dialog
+            }
+        });
+		
+ 
+		
 		builder.show();
 	}
 }
