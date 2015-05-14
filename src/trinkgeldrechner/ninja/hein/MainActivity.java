@@ -5,6 +5,8 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.DialogInterface;
+import android.graphics.Color;
+import android.graphics.PorterDuff;
 import android.text.Editable;
 import android.text.TextUtils;
 import android.text.method.DigitsKeyListener;
@@ -92,22 +94,36 @@ public class MainActivity extends Activity implements OnClickListener {
 		switch (v.getId()) { 
 
 		case R.id.buttonSchlecht:
-			Toast toast1 = Toast.makeText(getApplicationContext(),
-					"Schlechter Service hier.", Toast.LENGTH_SHORT);
+//			Toast toast1 = Toast.makeText(getApplicationContext(),
+//					"Schlechter Service hier.", Toast.LENGTH_SHORT);
 //			toast1.show();
+		
 			trinkgeldBerechnen();
+			btn_schlecht.getBackground().setColorFilter(Color.GREEN, PorterDuff.Mode.MULTIPLY);
+			btn_normal.getBackground().clearColorFilter();
+			btn_excellent.getBackground().clearColorFilter();
+
+			
 			break;
 		case R.id.buttonNormal:
-			Toast toast2 = Toast.makeText(getApplicationContext(),
-					"Normaler Service hier.", Toast.LENGTH_SHORT);
+//			Toast toast2 = Toast.makeText(getApplicationContext(),
+//					"Normaler Service hier.", Toast.LENGTH_SHORT);
 //			toast2.show();
 			trinkgeldBerechnen();
+			btn_schlecht.getBackground().clearColorFilter();
+			btn_normal.getBackground().setColorFilter(Color.GREEN, PorterDuff.Mode.MULTIPLY);
+			btn_excellent.getBackground().clearColorFilter();
+
 			break;
 		case R.id.buttonExcellent:
-			Toast toast3 = Toast.makeText(getApplicationContext(),
-					"Excellenter Service hier.", Toast.LENGTH_SHORT);
+//			Toast toast3 = Toast.makeText(getApplicationContext(),
+//					"Excellenter Service hier.", Toast.LENGTH_SHORT);
 //			toast3.show();
 			trinkgeldBerechnen();
+			btn_schlecht.getBackground().clearColorFilter();
+			btn_normal.getBackground().clearColorFilter();
+			btn_excellent.getBackground().setColorFilter(Color.GREEN, PorterDuff.Mode.MULTIPLY);
+
 			break;
 		}
 
