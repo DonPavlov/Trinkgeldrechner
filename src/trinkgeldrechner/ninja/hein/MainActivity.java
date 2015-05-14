@@ -2,7 +2,9 @@ package trinkgeldrechner.ninja.hein;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.app.Dialog;
+import android.content.DialogInterface;
 import android.text.Editable;
 import android.text.TextUtils;
 import android.text.method.DigitsKeyListener;
@@ -117,7 +119,7 @@ public class MainActivity extends Activity implements OnClickListener {
 	    switch (item.getItemId()) {
 	        case R.id.geiz:
 	        	// create Dialog bla
-	        	
+	        	dialogmenu();
 	            return true;
 	    
 	        default:
@@ -125,5 +127,68 @@ public class MainActivity extends Activity implements OnClickListener {
 	    }
 	}
 	
+	/*/
+	 * 
+	 * Gibt die Passende Nummer zurück von 0 bis 2, passend zum Dialogmenü
+	 * 0: prozentsatz = 15
+	 * 1: prozentsatz = 10
+	 * 2: prozentsatz = 5
+	 * 
+	 * @param	int returnValue
+	 * 
+	 * @return int prozentsatz
+	 */
+	public int getProzentsatzInt(){
+		int returnValue = 1;
+		switch (prozentsatz){
+	
+		case 15:
+			returnValue=0;
+			break;
+		case 10:
+			returnValue=1;
+			break;
+		case 5:
+			returnValue=2;
+			break;
+		default:
+			break;
+		}
+		return returnValue;
+	}
+	
+	public void dialogmenu(){
+		CharSequence generosity[] = new CharSequence[] {"Generös", "Normal", "Knauserig"};
+				
+		AlertDialog.Builder builder = new AlertDialog.Builder(this);
+		
+	    // Specify the list array, the items to be selected by default (null for none),
+	    // and the listener through which to receive callbacks when items are selected
+		builder.setTitle(R.string.generosityDialog).setSingleChoiceItems(generosity, getProzentsatzInt(),
+	                      new DialogInterface.OnClickListener() {
+		
 
+		    @Override
+		    public void onClick(DialogInterface dialog, int which) {
+		        // the user clicked on colors[which]
+		    	switch(which){
+		    	
+		    	case 0:
+		    		prozentsatz = 15;
+		    		break;
+		    	case 1:
+		    		prozentsatz = 10;
+		    		break;
+		    	case 2:
+		    		prozentsatz = 5;
+		    		break;
+		
+	    		default:
+	    			break;
+		    	}
+		    }
+		});
+		
+		builder.show();
+	}
 }

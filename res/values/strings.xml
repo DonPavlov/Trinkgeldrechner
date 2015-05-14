@@ -2,8 +2,9 @@
 <resources>
 
     <string name="app_name">Trinkgeldrechner</string>
-    <string name="hello_world">Hello world!</string>
+    
     <string name="action_settings">Settings</string>
     <string name="geiz">Prozentsatz festlegen</string>
+    <string name="generosityDialog">Wie großzügig sind sie heute?</string>
 
 </resources>
