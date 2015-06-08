@@ -8,12 +8,18 @@
     android:orientation="vertical"
     android:textAlignment="center"
     tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/txt_prozentsatz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="txt" />
 	
     <Space
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_weight="0.005" />
+        android:layout_weight="0.001" />
     
     <TextView
         android:id="@+id/txt_trinkgeld"
@@ -27,7 +33,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_weight="0.005" />
+        android:layout_weight="0.001" />
 
     <EditText
         android:id="@+id/txt_eingabe"
@@ -40,11 +46,17 @@
         <requestFocus />
     </EditText>
 
+    <Button
+        android:id="@+id/buttonBerechnen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trinkgeld berechnen" />
+
     <Space
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_weight="0.005" />
+        android:layout_weight="0.001" />
     
     <LinearLayout
         android:id="@+id/LinearLayout2"
@@ -75,7 +87,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_weight="0.005" />
+        android:layout_weight="0.001" />
     
     <EditText
         android:id="@+id/editText2"

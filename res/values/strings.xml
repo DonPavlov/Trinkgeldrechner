@@ -8,5 +8,7 @@
     <string name="generosityDialog">Wie großzügig sind sie heute?</string>
     <string name="ok">OK</string>
     <string name="cancel">Abbrechen</string>
+    <string name="trinkgeld">Trinkgeld entspricht:\u0020</string>
+    <string name="rechnung">Rechnung incl. Trinkgeld</string>
 
 </resources>
