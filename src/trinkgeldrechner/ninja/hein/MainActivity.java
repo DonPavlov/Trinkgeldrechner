@@ -100,6 +100,8 @@ public class MainActivity extends Activity implements OnClickListener {
 		}
 		// Catch wegen Eingabe und Verarbeitung von Werten vom User
 		try {
+			// Kommas werden hier zum Punkt als Trennzeichen zwischen euro und
+			// cent. Dies verallgemeinert beides
 			floatTrinkg = Float.parseFloat(txt_eingabe.getText().toString()
 					.replace(',', '.'));
 			floatEingabe = floatTrinkg;
