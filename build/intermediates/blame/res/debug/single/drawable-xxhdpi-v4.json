@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/paul/AndroidStudioProjects/Trinkgeldrechner/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/ic_launcher.png",
+        "source": "/home/paul/AndroidStudioProjects/Trinkgeldrechner/res/drawable-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/paul/workspace/Trinkgeldrechner/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/ic_launcher.png",
+        "source": "/home/paul/workspace/Trinkgeldrechner/res/drawable-xxhdpi/ic_launcher.png"
+    }
+]

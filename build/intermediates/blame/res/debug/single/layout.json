@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/paul/AndroidStudioProjects/Trinkgeldrechner/build/intermediates/res/merged/debug/layout/activity_main.xml",
+        "source": "/home/paul/AndroidStudioProjects/Trinkgeldrechner/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/home/paul/workspace/Trinkgeldrechner/build/intermediates/res/merged/debug/layout/activity_main.xml",
+        "source": "/home/paul/workspace/Trinkgeldrechner/res/layout/activity_main.xml"
+    }
+]

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/home/paul/workspace/Trinkgeldrechner/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="cd40d374d9a9a79136db5216e8c7edab76b50b8b">
+        <dex dex="/home/paul/workspace/Trinkgeldrechner/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_3672df149224937b17030dcfbe2bef8b42037931/classes.dex" />
+    </item>
+    <item
+        jar="/home/paul/workspace/Trinkgeldrechner/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="d01e58169db3652cf147e8b3a1248df3cd4d22c2">
+        <dex dex="/home/paul/workspace/Trinkgeldrechner/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_b7f08b27d402b65ec4c46286e664840107378e2a/classes.dex" />
+    </item>
+    <item
+        jar="/home/paul/workspace/Trinkgeldrechner/libs/android-support-v4.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="33b27a8d2a5b87e6eb6c60e87a5374ffbfeacc3a">
+        <dex dex="/home/paul/workspace/Trinkgeldrechner/build/intermediates/transforms/dex/debug/folders/1000/2/android-support-v4_c7e09cda6d166d37204d24e2fa62d46261d97b93/classes.dex" />
+    </item>
+
+</items>

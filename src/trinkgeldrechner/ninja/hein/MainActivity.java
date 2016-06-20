@@ -58,7 +58,7 @@ public class MainActivity extends Activity implements OnClickListener {
 
 		// Optionales Handling ungültiger Eingaben
 		// txt_eingabe.setKeyListener(DigitsKeyListener.getInstance("0123456789.,"));
-		txt_prozentsatz.setText(getProzentsatzText());
+		txt_prozentsatz.setText(getProzentsatzText(	));
 		txt_trinkgeld.setText(getString(R.string.trinkgeld) + "0.0 €");
 		txt_gesamt.setText("Gesamtbetrag: 0.0");
 	}
